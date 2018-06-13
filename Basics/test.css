@@ -1,0 +1,43 @@
+*{
+	/*初始设置*/
+   margin: 0;
+   padding: 0;
+   color: #424242;
+}
+.nav{
+	list-style: none;
+
+}
+a{
+	/*去下划线*/
+	text-decoration: none;;
+
+}
+.nav::after{
+	/* 去浮动流*/
+	content: "";
+	display: block;
+	clear: both;
+}
+.nav .list-item{
+	float: left;
+	margin: 0px 10px;
+	height: 30px;
+	padding: 0px 10px;
+	line-height: 30px;
+	/*border:1px solid red;*/
+}
+.nav .list-item a{
+	color: #f40;
+	font-weight: bold;
+	height: 30px;
+	display: inline-block;
+
+}
+.nav .list-item a:hover{
+	/*点击效果*/
+	background-color: #f40;
+	color: #fff;
+	border-radius: 10px;
+}
+
